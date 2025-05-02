@@ -13,13 +13,13 @@
             "in_stock":true
         },
         {
-            "id":1001,
+            "id":1003,
             "name":"Devops",
             "price":39,
             "in_stock":true
         },
         {
-            "id":1001,
+            "id":1004,
             "name":"Front-end",
             "price":19,
             "in_stock":true
