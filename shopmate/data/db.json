@@ -3,22 +3,26 @@
         {
             "id":1001,
             "name":"Basics to Advance React",
-            "price":99
+            "price":99,
+            "in_stock":true
         },
         {
             "id":1002,
             "name":"Django ",
-            "price":49
+            "price":49,
+            "in_stock":true
         },
         {
             "id":1001,
             "name":"Devops",
-            "price":39
+            "price":39,
+            "in_stock":true
         },
         {
             "id":1001,
             "name":"Front-end",
-            "price":19
+            "price":19,
+            "in_stock":true
         }
 
     ]
