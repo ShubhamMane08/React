@@ -10,7 +10,7 @@ export const ProductList = () => {
 
     const fetchProducts= async () =>{
       const response = await fetch(url);
-      const data = await response.json;
+      const data = await response.json();
       setProducts(data);
     }
     fetchProducts();
