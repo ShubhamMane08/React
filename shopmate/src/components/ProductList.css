@@ -37,16 +37,26 @@
     background: #fff;
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    padding: 20px;
+    padding: 16px 20px;
     margin-bottom: 16px;
-    display: flex;
-    flex-direction: column;
-    gap: 6px;
-    border-left: 5px solid #6a1b9a;
     position: relative;
   }
   
-  .card .id {
+  .name {
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 4px;
+  }
+  
+  .info {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 8px;
+    display: inline-block;
+  }
+  
+  .id {
     background-color: #6a1b9a;
     color: white;
     font-weight: bold;
@@ -56,31 +66,23 @@
     width: fit-content;
   }
   
-  .card .name {
-    font-size: 18px;
+  .instock,
+  .unavailable {
+    position: absolute;
+    top: 16px;
+    right: 20px;
+    padding: 6px 10px;
+    border-radius: 12px;
+    font-size: 13px;
     font-weight: 500;
-    color: #333;
-  }
-  
-  .card .info {
-    font-size: 16px;
-    color: #555;
-    margin-right: 10px;
+    color: white;
   }
   
   .instock {
     background-color: #4caf50;
-    color: white;
-    padding: 4px 8px;
-    border-radius: 6px;
-    font-size: 14px;
   }
   
   .unavailable {
     background-color: #f44336;
-    color: white;
-    padding: 4px 8px;
-    border-radius: 6px;
-    font-size: 14px;
   }
   
