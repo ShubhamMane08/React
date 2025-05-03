@@ -15,8 +15,10 @@ export const ProductList = () => {
 );
 return (
       <section>
-        <button onClick={()=>setUrl("http://localhost:8000/products")}>All</button>
-        <button onClick={()=>setUrl("http://localhost:8000/products?in_stock=true")}>In Stock Products</button>
+        <div className="filter">
+          <button onClick={()=>setUrl("http://localhost:8000/products")}>All</button>
+          <button onClick={()=>setUrl("http://localhost:8000/products?in_stock=true")}>In Stock Only</button>
+        </div>
           {products.map((product)=>(
             <div className="card" key={product.id}>
               <p className="id">{product.id}</p>
