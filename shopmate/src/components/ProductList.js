@@ -14,9 +14,7 @@ export const ProductList = () => {
  
   useEffect(() => {
     fetchProducts();
-    [fetchProducts]
-    
-  },[url]
+  },[fetchProducts]
 );
 return (
       <section>
