@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react"
+import { useCallback, useEffect, useState } from "react"
 import "./ProductList.css";
 export const ProductList = () => {
   const [products, setProducts]=useState([]);
@@ -6,14 +6,15 @@ export const ProductList = () => {
 
   console.log(products);
  
+  const fetchProducts= useCallback( async () =>{
+    const response = await fetch(url);
+    const data = await response.json();
+    setProducts(data);
+  },[url]) 
+ 
   useEffect(() => {
-
-    const fetchProducts= async () =>{
-      const response = await fetch(url);
-      const data = await response.json();
-      setProducts(data);
-    }
     fetchProducts();
+    [fetchProducts]
     
   },[url]
 );
