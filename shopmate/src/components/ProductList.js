@@ -11,12 +11,12 @@ export const ProductList = () => {
     fetch(url)
     .then(response => response.json())
     .then(data => setProducts(data)); 
-  },[]
+  },[url]
 );
 return (
       <section>
-        <button onClick={()=>setUrl("")}>All</button>
-        <button onClick={()=>setUrl}></button>
+        <button onClick={()=>setUrl("http://localhost:8000/products")}>All</button>
+        <button onClick={()=>setUrl("http://localhost:8000/products?in_stock=true")}>In Stock Products</button>
           {products.map((product)=>(
             <div className="card" key={product.id}>
               <p className="id">{product.id}</p>
