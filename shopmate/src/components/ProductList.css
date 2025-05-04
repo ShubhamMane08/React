@@ -89,6 +89,7 @@
   {
     height: 100px;
     width: 100px;
+    margin-right: 50%;
     border: 10px solid lightblue;
     border-radius: 50%;
     border-top:10px solid blue;
