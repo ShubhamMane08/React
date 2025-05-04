@@ -25,7 +25,7 @@ return (
           <button onClick={()=>setUrl("http://localhost:8000/products")}>All</button>
           <button onClick={()=>setUrl("http://localhost:8000/products?in_stock=true")}>In Stock Only</button>
         </div>
-        {loading && <p>Loading products..</p>}
+        {loading && <p>Loading products...</p>}
           {products && products.map((product)=>(
             <div className="card" key={product.id}>
               <p className="id">{product.id}</p>
