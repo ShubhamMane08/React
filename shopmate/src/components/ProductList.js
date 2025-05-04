@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useState } from "react"
+import {  useState } from "react"
 import "./ProductList.css";
 import { useFetch } from "../hooks/useFetch";
 
