@@ -2,6 +2,7 @@ import {  useState } from "react"
 import "./ProductList.css";
 import { useFetch } from "../hooks/useFetch";
 
+
 export const ProductList = () => {
   //const [products, setProducts]=useState([]);
   const [url, setUrl]=useState("http://localhost:8000/products");
@@ -25,7 +26,8 @@ return (
           <button onClick={()=>setUrl("http://localhost:8000/products")}>All</button>
           <button onClick={()=>setUrl("http://localhost:8000/products?in_stock=true")}>In Stock Only</button>
         </div>
-        {loading && <p>Loading products...</p>}
+        {loading && <p className="loading">Loading Products...</p>}
+        
 
           {products && products.map((product)=>(
             <div className="card" key={product.id}>

@@ -85,4 +85,20 @@
   .unavailable {
     background-color: #f44336;
   }
-  
+  .loading
+  {
+    height: 100px;
+    width: 100px;
+    border: 10px solid lightblue;
+    border-radius: 50%;
+    border-top:10px solid blue;
+    animation-name: abc;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+  @keyframes abc {
+    to
+    {
+        transform: rotate(360deg);
+    }}
