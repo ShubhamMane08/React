@@ -13,8 +13,8 @@ export const useFetch = (url) => {
             setData(result);
         }
         fetchData();
-    },[url,loading])
+    },[url])
 
     
-  return {data}
+  return {data, loading}
 }
