@@ -10,6 +10,10 @@ export const useFetch = (url) => {
             try
             {
                 const response = await fetch(url);
+                if(!response.ok)
+                {
+                    throw Error(response.statusText)
+                }
                 const result = await response.json();
                 console.log(response);
                 setLoading(false);
