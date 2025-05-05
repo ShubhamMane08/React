@@ -12,6 +12,7 @@ export const useFetch = (url) => {
 
                 const response = await fetch(url);
                 const result = await response.json();
+                console.log(response);
                 setLoading(false);
                 setData(result);
             }
