@@ -24,6 +24,7 @@ export const useFetch = (url) => {
             {
                 console.log(error.message);
                 setError(error.message);
+                setLoading(false);
             }
         }
         fetchData();
