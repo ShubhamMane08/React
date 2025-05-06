@@ -11,7 +11,7 @@ export const useFetch = (url) => {
             try
             {
                 
-                const response = await fetch(url,{signal:AbortController.signal});
+                const response = await fetch(url,{signal:controller.signal});
                 if(!response.ok)
                 {
                     throw new Error(response.statusText)
@@ -30,6 +30,7 @@ export const useFetch = (url) => {
             }
         }
         fetchData();
+        return ()=>controller.abort();
     },[url])
 
     
