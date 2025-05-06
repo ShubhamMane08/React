@@ -6,7 +6,7 @@ import { useFetch } from "../hooks/useFetch";
 export const ProductList = () => {
   //const [products, setProducts]=useState([]);
   const [url, setUrl]=useState("http://localhost:8000/products");
-  const {data : products,loading,error}= useFetch(url);
+  const {data : products,loading,error}= useFetch(url,{content: "ABC"});
 
 //   console.log(products);
  
