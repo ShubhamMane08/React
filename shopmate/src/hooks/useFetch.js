@@ -10,7 +10,7 @@ export const useFetch = (url) => {
             setLoading(true);
             try
             {
-                
+                const controller = new AbortController();
                 const response = await fetch(url,{signal:controller.signal});
                 if(!response.ok)
                 {
