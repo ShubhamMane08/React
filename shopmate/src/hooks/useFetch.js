@@ -1,11 +1,11 @@
-import { useEffect, useState } from "react"
+import { useEffect, useRef, useState } from "react"
 
 export const useFetch = (url,_body) => {
 
     const [data,setData]=useState(null);
     const [loading, setLoading]=useState(false);
     const [error,setError]=useState("");
-    
+    const body = useRef(_body)
 
     useEffect(()=>{
         const fetchData=async ()=>{
