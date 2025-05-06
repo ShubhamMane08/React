@@ -1,10 +1,12 @@
 import { useEffect, useState } from "react"
 
-export const useFetch = (url,body) => {
+export const useFetch = (url,_body) => {
 
     const [data,setData]=useState(null);
     const [loading, setLoading]=useState(false);
     const [error,setError]=useState("");
+    
+
     useEffect(()=>{
         const fetchData=async ()=>{
             setLoading(true);
@@ -31,7 +33,7 @@ export const useFetch = (url,body) => {
         }
         fetchData();
         return ()=>controller.abort();
-    },[url])
+    },[url,body]);
 
     
   return {data, loading,error}
