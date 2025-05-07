@@ -32,7 +32,7 @@ export const useFetch = (url,_body) => {
             }
         }
         fetchData();
-        return ()=>controller.abort();
+        return (()=> controller.abort());
     },[url,body]);
 
     
