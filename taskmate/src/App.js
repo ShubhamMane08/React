@@ -5,7 +5,9 @@ import {ShowTask} from "./components/ShowTask.js";
 function App() {
   return (
     <div className="App">
-      <h1>Hello World</h1>
+      <Header/>
+      <AddTask/>
+      <ShowTask/>
     </div>
   );
 }
