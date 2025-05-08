@@ -3,7 +3,9 @@ export const AddTask = ({tasklist,setTasklist}) => {
     e.preventDefault();
 
     const date = new Date();
-    const newTask = {id:date.getTime(),name:e,time:`${date.toLocaleTimeString} ${date.toLocaleDateString}`};
+    const newTask = {id:date.getTime(),
+      name:e,
+      time:`${date.toLocaleTimeString} ${date.toLocaleDateString}`};
 
   }
     return (
