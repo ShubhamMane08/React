@@ -12,7 +12,7 @@ export const ShowTask = ({tasklist,setTasklist}) => {
         </div>
         <ul>
             { tasklist.map((task) => (
-                <li>
+                <li key={task.id}>
                     <p>
                         <span className="name">{task.name}</span>
                         <span className="time">{task.time}</span>
