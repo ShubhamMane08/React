@@ -3,7 +3,7 @@ export const AddTask = ({tasklist,setTasklist}) => {
     e.preventDefault();
 
     const date = new Date();
-    const newTask = {id,name,time};
+    const newTask = {id:date.getTime(),name,time};
 
   }
     return (
