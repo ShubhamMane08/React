@@ -6,7 +6,7 @@ export const ShowTask = ({tasklist,setTasklist}) => {
         <div className="head">
             <div>
                 <span className="title">Todo</span>
-                <span className="count">0</span>
+                <span className="count">{tasklist.length}</span>
             </div>
             <button className="clearAll">Clear All</button>
         </div>
