@@ -1,4 +1,11 @@
 export const AddTask = ({tasklist,setTasklist}) => {
+  const handleSubmit=(e)=>{
+    e.preventDefault();
+
+    const date = new Date();
+    const newTask = {id,name,time};
+
+  }
     return (
       <section className="addTask">
           <form onSubmit={handleSubmit}>
