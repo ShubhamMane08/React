@@ -6,7 +6,7 @@ import {ShowTask} from "./components/ShowTask.js";
 
 function App() {
 
-  const [tasklist,setTasklist]=useStatetate([]);
+  const [tasklist,setTasklist]=useState([]);
 
   return (
     <div className="App">
