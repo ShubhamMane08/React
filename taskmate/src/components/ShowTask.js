@@ -11,7 +11,7 @@ export const ShowTask = ({tasklist,setTasklist}) => {
             <button className="clearAll">Clear All</button>
         </div>
         <ul>
-            { tasks.map((task) => (
+            { tasklist.map((task) => (
                 <li>
                     <p>
                         <span className="name">{task.name}</span>
