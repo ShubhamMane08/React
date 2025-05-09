@@ -1,7 +1,12 @@
 export const AddTask = ({tasklist,setTasklist,task,setTask}) => {
   const handleSubmit=(e)=>{
    e.preventDefault();
+   if(task.id)
+   {
 
+   }
+   else
+   {
     const date = new Date();
     const newTask = {id:date.getTime(),
       name:e.target.task.value,
@@ -9,6 +14,9 @@ export const AddTask = ({tasklist,setTasklist,task,setTask}) => {
     };
     setTasklist([...tasklist,newTask]);
     e.target.task.value="";
+   }
+
+    
 
   }
     return (
