@@ -6,7 +6,7 @@ import {ShowTask} from "./components/ShowTask.js";
 
 function App() {
 
-  const [tasklist,setTasklist]=useState([]);
+  const [tasklist,setTasklist]=useState(JSON.parse(localStorage.getItem("tasklist")),[]);
   const [task,setTask]=useState({});
 
   return (
