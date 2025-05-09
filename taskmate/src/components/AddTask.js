@@ -5,9 +5,10 @@ export const AddTask = ({tasklist,setTasklist,task,setTask}) => {
    {
     const date = new Date();
     const updatedTasklist = tasklist.map((todo)=>(
-      todo.id===task.id? { id:task.id,name:e.target.task.value,time:`${date.toLocaleTimeString()} ${date.toLocaleDateString()}`}:todo 
+      todo.id===task.id? { id:task.id,name:task.name,time:`${date.toLocaleTimeString()} ${date.toLocaleDateString()}`}:todo 
     ));
     setTasklist(updatedTasklist);
+    setTask({});
 
    }
    else
@@ -18,7 +19,7 @@ export const AddTask = ({tasklist,setTasklist,task,setTask}) => {
       time:`${date.toLocaleTimeString()} ${date.toLocaleDateString()}`
     };
     setTasklist([...tasklist,newTask]);
-    e.target.task.value="";
+    setTask({});
    }
 
     
