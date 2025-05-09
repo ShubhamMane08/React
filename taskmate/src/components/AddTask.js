@@ -3,6 +3,11 @@ export const AddTask = ({tasklist,setTasklist,task,setTask}) => {
    e.preventDefault();
    if(task.id)
    {
+    const date = new Date();
+    const updatedTasklist = tasklist.map((todo)=>(
+      todo.id===task.id? { id:task.id,name:e.target.task.value,time:`${date.toLocaleTimeString()} ${date.toLocaleDateString()}`}:todo 
+    ));
+    setTasklist(updatedTasklist);
 
    }
    else
