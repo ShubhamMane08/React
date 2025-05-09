@@ -1,6 +1,10 @@
+import { useState } from "react"
 import Logo from "../assests/logo.png"
 
 export const Header = () => {
+
+  const [theme,setTheme]= useState("dark");
+
   return (
     <header>
         <div className="logo">
