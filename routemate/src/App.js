@@ -9,6 +9,7 @@ function App() {
   return (
   
     <div className="App">
+      <header>HEADER</header>
       <Routes>
         <Route path="/" element={<Home/>}> </Route>
         <Route path="products" element={<ProductList/>}> </Route>
@@ -16,6 +17,7 @@ function App() {
         <Route path="contact" element={<Contact/>}> </Route>
     
       </Routes>
+      <footer>FOOTER</footer>
       
     </div>
   );
