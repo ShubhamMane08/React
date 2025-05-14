@@ -11,12 +11,13 @@ function App() {
     <div className="App">
       <header>HEADER</header>
       <Routes>
-        
+
         <Route path="/" element={<Home/>}> </Route>
         <Route path="products" element={<ProductList/>}> </Route>
         <Route path="products/1" element={<ProductDetails/>}> </Route>
         <Route path="contact" element={<Contact/>}> </Route>
       </Routes>
+      
       <footer>FOOTER</footer>
     </div>
   );
