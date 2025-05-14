@@ -9,7 +9,7 @@ function App() {
   return (
   
     <div className="App">
-      
+
       <header>HEADER</header>
       <Routes>
 
@@ -20,6 +20,7 @@ function App() {
 
       </Routes>
       <footer>FOOTER</footer>
+      
     </div>
   );
 }
