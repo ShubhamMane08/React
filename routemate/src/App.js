@@ -15,7 +15,6 @@ function App() {
         <Route path="products" element={<ProductList/>}> </Route>
         <Route path="products/1" element={<ProductDetails/>}> </Route>
         <Route path="contact" element={<Contact/>}> </Route>
-    
       </Routes>
       <footer>FOOTER</footer>
     </div>
