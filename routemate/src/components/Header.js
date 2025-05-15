@@ -3,13 +3,13 @@ import {Link , Navlink} from "react-router-dom";
 export const Header = () => {
   return (
     <header>
-      <a href="/" className="logo">
+      <Link href="/" className="logo">
       <img src={Logo} alt="Routemate Logo" />
       <span>Routemate</span>
-      </a>
+      </Link>
       <nav className="navigation">
-        <a href="/" className="link">Home</a>
-        <a href="/products" className="link">Products</a>
+        <Link href="/" className="link">Home</Link>
+        <Link href="/products" className="link">Products</Link>
         <a href="/contact" className="link">Contact</a>
 
       </nav>
