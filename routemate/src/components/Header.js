@@ -1,4 +1,4 @@
-import Logo from "../../assests/logo.png";
+import Logo from "../assests/logo.png";
 export const Header = () => {
   return (
     <header>
@@ -7,9 +7,9 @@ export const Header = () => {
       <span>Routemate</span>
       </a>
       <nav className="navigation">
-        <a href="/">Home</a>
-        <a href="/products">Products</a>
-        <a href="/contact">Contact</a>
+        <a href="/" className="link">Home</a>
+        <a href="/products" className="link">Products</a>
+        <a href="/contact" className="link">Contact</a>
 
       </nav>
 
