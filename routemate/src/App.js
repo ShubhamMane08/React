@@ -13,7 +13,9 @@ function App() {
     <div className="App">
 
       <Header/>
+      <main>
       <Routes>
+      
 
         <Route path="/" element={<Home/>}> </Route>
         <Route path="products" element={<ProductList/>}> </Route>
@@ -21,6 +23,7 @@ function App() {
         <Route path="contact" element={<Contact/>}> </Route>
 
       </Routes>
+      </main>
       <Footer/>
       
     </div>
