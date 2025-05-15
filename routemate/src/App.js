@@ -4,6 +4,8 @@ import { ProductList } from './components/ProductList';
 import { ProductDetails } from './components/ProductDetails';
 import {Home} from "./components/Home";
 import { Contact } from './components/Contact';
+import {Header} from './components/Header';
+
 
 function App() {
   return (
