@@ -1,16 +1,16 @@
 import Logo from "../assests/logo.png";
-import {Link , Navlink} from "react-router-dom";
+import {Link , NavLink} from "react-router-dom";
 export const Header = () => {
   return (
     <header>
-      <Link href="/" className="logo">
+      <Link to="/" className="logo">
       <img src={Logo} alt="Routemate Logo" />
       <span>Routemate</span>
       </Link>
       <nav className="navigation">
-        <Link href="/" className="link">Home</Link>
-        <Link href="/products" className="link">Products</Link>
-        <Link href="/contact" className="link">Contact</Link>
+        <NavLink to="/" className="link" end>Home</NavLink>
+        <NavLink to="/products" className="link">Products</NavLink>
+        <NavLink to="/contact" className="link">Contact</NavLink>
 
       </nav>
 
