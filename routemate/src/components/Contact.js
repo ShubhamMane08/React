@@ -4,7 +4,7 @@ export const Contact = () => {
     const navigate = useNavigate();
     const handleSubmit=()=>{
       console.log("----------------");
-      navigate("/");
+      return navigate("/");
     }
   
   return (
