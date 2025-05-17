@@ -2,7 +2,7 @@ export const Contact = () => {
   return (
 
     <main>
-    <div>Contact</div>
+    <div className="component">Contact</div>
     </main>
     
   )
