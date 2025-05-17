@@ -10,7 +10,7 @@ export const ProductList = () => {
   return (
     <>
     <div className="component">ProductList</div>
-    <button onClick={handleSubmit}></button>
+    <button onClick={handleSubmit}>Back To Home</button>
     </>
   )
 }

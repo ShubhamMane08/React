@@ -10,7 +10,7 @@ export const Contact = () => {
   return (
     <main>
     <div className="component">Contact</div>
-    <button onClick={handleSubmit}>Back To Homepage</button>
+    <button onClick={handleSubmit}>Submit Form</button>
     </main>
     
   )

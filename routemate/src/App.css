@@ -4,6 +4,15 @@
   padding: 0px 10px;
 }
 
+.component{
+  font-size: 22px;
+  padding: 20px 10px;
+  box-shadow: var(--box-shadow);
+  border-radius: 5px;
+  text-align: center;
+  margin: 20px 0px;
+}
+
 header {
   display: flex;
   justify-content: space-between;
@@ -35,7 +44,7 @@ header {
   border-radius: 5px;
 }
 
-@media screen and (max-width: 680px) {
+@media screen and (max-width: 480px) {
   .navigation{
       display: none;
   }
@@ -135,6 +144,5 @@ footer{
   padding: 20px;
   height: 70px;
   font-size: 18px;
-  border-top: 1px solid var(--theme-border);
-  
+  border-top: 1px solid #EEEEEE;
 }
