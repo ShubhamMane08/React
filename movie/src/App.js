@@ -1,20 +1,30 @@
 import React, { useState } from 'react';
 import MovieCard from './MovieCard';
 
-const API_KEY = "YOUR_API_KEY"; // Replace with your OMDb API key
+const API_KEY = "your_actual_api_key"; // <-- Replace with your OMDb API Key
 
 function App() {
   const [searchTerm, setSearchTerm] = useState('');
   const [movies, setMovies] = useState([]);
+  const [error, setError] = useState('');
 
   const searchMovies = async () => {
-    const response = await fetch(`https://www.omdbapi.com/?s=${searchTerm}&apikey=${API_KEY}`);
-    const data = await response.json();
+    if (!searchTerm.trim()) return;
 
-    if (data.Search) {
-      setMovies(data.Search);
-    } else {
-      setMovies([]);
+    try {
+      const response = await fetch(`https://www.omdbapi.com/?s=${searchTerm}&apikey=${API_KEY}`);
+      const data = await response.json();
+
+      if (data.Response === "True") {
+        setMovies(data.Search);
+        setError('');
+      } else {
+        setMovies([]);
+        setError(data.Error);
+      }
+    } catch (err) {
+      console.error("Fetch error:", err);
+      setError("Failed to fetch movies.");
     }
   };
 
@@ -31,14 +41,12 @@ function App() {
         <button onClick={searchMovies}>Search</button>
       </div>
 
+      {error && <p className="error">{error}</p>}
+
       <div className="movies">
-        {movies.length > 0 ? (
-          movies.map((movie) => (
-            <MovieCard key={movie.imdbID} movie={movie} />
-          ))
-        ) : (
-          <p>No movies found</p>
-        )}
+        {movies.map((movie) => (
+          <MovieCard key={movie.imdbID} movie={movie} />
+        ))}
       </div>
     </div>
   );
