@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import MovieCard from './MovieCard';
 
-const API_KEY = "349e4cee"; // ✅ Your working OMDb API key
+const API_KEY = "203a241"; 
 
 function App() {
   const [searchTerm, setSearchTerm] = useState('');
