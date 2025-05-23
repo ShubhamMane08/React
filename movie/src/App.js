@@ -7,8 +7,7 @@ function App() {
   const [searchTerm, setSearchTerm] = useState('');
   const [movies, setMovies] = useState([]);
   const [error, setError] = useState('');
-
-  // Show popular/default movies on first load
+  
   useEffect(() => {
     const fetchPopularMovies = async () => {
       try {
