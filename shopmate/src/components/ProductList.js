@@ -16,9 +16,9 @@ export const ProductList = () => {
 //     setProducts(data);
 //   },[url]) 
  
-//   useEffect(() => {
-//     fetchProducts();
-//   },[fetchProducts]
+//   // useEffect(() => {
+//   //   fetchProducts();
+//   // },[fetchProducts]
 // );
 return (
       <section>
