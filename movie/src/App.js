@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import MovieCard from './MovieCard';
 
 const API_KEY = "203a241"; 
