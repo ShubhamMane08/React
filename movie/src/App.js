@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import MovieCard from './MovieCard';
 
-const API_KEY = "your_tmdb_api_key_here"; // Replace with your actual TMDb API key
+const API_KEY = "203a241"; // Replace with your actual TMDb API key
 
 function App() {
   const [searchTerm, setSearchTerm] = useState('');
