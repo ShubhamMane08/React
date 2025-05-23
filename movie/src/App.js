@@ -8,6 +8,23 @@ function App() {
   const [movies, setMovies] = useState([]);
   const [error, setError] = useState('');
 
+    useEffect(() => {
+    const fetchPopularMovies = async () => {
+      try {
+        const response = await fetch(
+          `https://api.themoviedb.org/3/movie/popular?api_key=${API_KEY}&language=en-US&page=1`
+        );
+        const data = await response.json();
+        setMovies(data.results);
+      } catch (err) {
+        console.error("Failed to fetch popular movies", err);
+        setError("Failed to load popular movies.");
+      }
+    };
+
+    fetchPopularMovies();
+  }, []);
+
   const searchMovies = async () => {
     if (!searchTerm.trim()) return;
 
