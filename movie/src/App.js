@@ -13,7 +13,7 @@ function App() {
     const fetchPopularMovies = async () => {
       try {
         const response = await fetch(
-          `https://www.omdbapi.com/?s=avengers&apikey=${API_KEY}`
+          `https://www.omdbapi.com/?s=movie&y=2025&apikey=${API_KEY}`
         );
         const data = await response.json();
 
@@ -25,8 +25,8 @@ function App() {
           setError(data.Error);
         }
       } catch (err) {
-        console.error("Failed to fetch popular movies", err);
-        setError("Failed to load popular movies.");
+        console.error("Failed to fetch Latest movies", err);
+        setError("Failed to load Latest movies.");
       }
     };
 
