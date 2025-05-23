@@ -39,7 +39,7 @@ body {
 .movie-card {
   background-color: #1e1e1e;
   padding: 10px;
-  border-radius: 10px;
+  border-radius: 10px solid;
 }
 
 
