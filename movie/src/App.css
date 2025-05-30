@@ -18,16 +18,29 @@ body {
 }
 
 .search-bar input {
-  padding: 10px;
-  font-size: 16px;
-  width: 300px;
+    border: none;
+  padding: 10px 16px;
+  font-size: 15px;
+  border-radius: 5px;
+  margin-bottom: 20px;
   border-radius: 10px solid;
 }
 
 .search-bar button {
-  padding: 10px 20px;
-  font-size: 16px;
+  background-color: #2980b9;
+  border: none;
+  padding: 10px 16px;
+  color: white;
+  font-size: 15px;
+  border-radius: 5px;
   cursor: pointer;
+  margin-bottom: 20px;
+  transition: background-color 0.3s ease;
+  
+}
+.search-bar button:hover
+{
+  background-color: #2980b9;
 }
 
 .movies {
@@ -55,3 +68,21 @@ body {
   color: #ff4c4c;
   margin-top: 10px;
 }
+
+.movie-details button {
+  background-color: #2980b9;
+  border: none;
+  padding: 10px 16px;
+  color: white;
+  font-size: 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.movie-details button:hover {
+  background-color: #3498db;
+}
+
+
